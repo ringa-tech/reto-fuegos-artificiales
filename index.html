@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fuegos artificiales</title>
+
+	<style type="text/css">
+		.particula {
+			width: 8px;
+			height: 8px;
+			background: black;
+			border-radius: 50%;
+			position: absolute;
+		}
+
+		.particula[data-padre="false"] {
+			width: 5px;
+			height: 5px;
+		}
+
+		body, html {
+			overflow-y: hidden;
+			overflow-x: hidden;
+
+			background: black;
+		}
+
+		#fondo {
+			position: absolute;
+		    bottom: -100px;
+		    opacity: .4;
+		}
+	</style>
+</head>
+<body>
+	<!--div class="particula" data-velocidad-y="0" data-velocidad-x="0" data-padre="true" /-->
+
+	<img src="fondo.png" id="fondo" />
+	<script src="index.js"></script>
+
+</body>
+</html>
